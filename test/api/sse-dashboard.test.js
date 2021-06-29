@@ -25,7 +25,7 @@ beforeAll(async () => {
 });
 
 describe("SSE-dashboard", () => {
-  it("should be able to be called with an EventSource", async (done) => {
+  it("should be able to be called with an EventSource", (done) => {
     const getRequest = request.get(routeBase + ssePath);
     const url = getRequest.url;
     expect(url).toBeTruthy();
