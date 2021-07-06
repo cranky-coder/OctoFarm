@@ -24,7 +24,7 @@ jobs:
         id: docker_meta
         uses: crazy-max/ghaction-docker-meta@v1
         with:
-          images: octofarm/octofarm
+          images: crankycoder5/octofarm
           tag-latest: false
           tag-custom: |
             ${{env.TAG_EDGE}}
